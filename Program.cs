@@ -9,11 +9,13 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 
 if (num1 > num2)
 {
-    Console.WriteLine("The first number is greater than the second.");
+    Console.WriteLine("The first number is larger.");
+    Console.WriteLine("The second number is smaller.");
 }
 else
 {
-    Console.WriteLine("The second number is greater than the first.");
+    Console.WriteLine("The second number is larger.");
+    Console.WriteLine("The first number is smaller.");
 }
 
 
