@@ -1,84 +1,83 @@
 ﻿/*
 
-// Задача 1
-
-Console.Write("Input integer number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Result is " + num*num);
-
-
-// Задача 2
+// Задача 1: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 Console.WriteLine("Input first integer number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input second integer number: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-int quad = num2*num2;
-
-if (num1 == num2 * num2)
+if (num1 > num2)
 {
-    Console.WriteLine("First number is quad of second number");
+    Console.WriteLine("The first number is greater than the second.");
 }
 else
 {
-    Console.WriteLine("First number is not quad of second number");
+    Console.WriteLine("The second number is greater than the first.");
 }
 
 
-// Задача 3
+// Задача 2: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
-Console.Write("Input number of weekday: ");
-int day = Convert.ToInt32(Console.ReadLine());
-if (day > 7 || day < 1)
+Console.WriteLine("Input first integer number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input second integer number: ");
+int max = num1;
+
+int num2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input third integer number: ");
+if (num2 > max)
 {
-    Console.WriteLine("Incorrect number of day!");
+    max = num2;
 }
-else
+    
+int num3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input third integer number: ");
+if (num3 > max)
 {
-    if (day == 1)
-        Console.WriteLine("Its's Monday");
-    if (day == 2)
-        Console.WriteLine("Its's Tuesday");
+    max = num3;
 }
 
+Console.WriteLine("Biggest number: " + max);
 
-// Задача 4
 
-Console.Write("Input integer number: ");
+// Задача 3: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+Console.WriteLine("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int current;
+
+int a = num % 2;
+
+if (a == 0)
+{
+    Console.WriteLine("Even number");
+}
+else
+{
+    Console.WriteLine("The number is odd");
+}
+
+
+// Задача 4: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.WriteLine("Input integer number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current = 1;
 
 if (num < 0)
 {
-    current = num;
     num = num * (-1);
-}
-
-else
-{
-    current = -1 * num;
 }
 
 while (current <= num)
 {
-    Console.Write(current + " ");
+    int a = current % 2;
+
+    if (a == 0)
+        {
+            Console.Write(current + " ");
+        }
     current++;
-}
-
-
-// Задача 5
-
-Console.Write("Input integer number: ");
-int num = Convert.ToInt32(Console.ReadLine());
-
-if (num < 100 || num > 999)
-    Console.WriteLine("Uncorrect number");
-else
-{
-    num = num % 10;
-    Console.WriteLine(num);
 }
 
 */
