@@ -63,4 +63,27 @@ else
     Console.Write("Please enter a positive number!");
 }
 
+
+// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+
+double Coords(int x1, int y1, int z1, int x2, int y2, int z2)
+{
+    return Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) + (z2 - z1) * (z2 - z1));
+}
+
+Console.WriteLine("Enter the x-coordinate of the first point: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the y-coordinate of the first point: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the z-coordinate of the first point: ");
+int z1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the x-coordinate of the second point: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the y-coordinate of the second point: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the z-coordinate of the second point: ");
+int z2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write(Coords(x1, y1, z1, x2, y2, z2));
+
 */
