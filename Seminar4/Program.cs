@@ -91,4 +91,48 @@ ShowArray(myArray);
 
 SumOfOddPositions(myArray);
 
+
+// Задача 3. Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+void DifferenceMinMax(double[] array)
+{
+    double min = array[0];
+    double max = array[0];
+    double difference = 0;
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > max)
+        {
+            max = array[i];
+        }
+
+        if (array[i] < min)
+        {
+            min = array[i];
+        }
+    }
+
+    difference = max - min;
+
+    Console.WriteLine("Difference between maximum and minimum array element: " + difference);
+}
+
+void ShowArray(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+
+    Console.WriteLine();
+}
+
+
+double[] myArray = {2, 73, 98, 22, 3};
+
+ShowArray(myArray);
+
+DifferenceMinMax(myArray);
+
 */
