@@ -85,7 +85,7 @@ void SumOfOddPositions(int[] array)
 }
 
 
-int[] myArray = CreateRandomArray(4, -50, 50);
+int[] myArray = CreateRandomArray(12, -50, 50);
 
 ShowArray(myArray);
 
