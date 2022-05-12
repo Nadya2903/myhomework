@@ -75,7 +75,7 @@ void SumOfOddPositions(int[] array)
         
     for (int i = 0; i < array.Length; i++)
     {
-        if (i % 2 == 0)
+        if (i % 2 != 0)
         {
             sum += array[i];
         }
@@ -85,7 +85,7 @@ void SumOfOddPositions(int[] array)
 }
 
 
-int[] myArray = CreateRandomArray(12, -50, 50);
+int[] myArray = CreateRandomArray(4, -50, 50);
 
 ShowArray(myArray);
 
