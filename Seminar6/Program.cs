@@ -84,8 +84,8 @@ BinarNumber(num);
 void IntersectionPoint(double b1, double k1, double b2, double k2)
 {
     double x = (b1 - b2) / (k2 - k1);
-    double y = k1 * x + b1;
-//    double y = (k2 * b1 - k1 * b2) / (k2 - k1);
+    double y = (k2 * b1 - k1 * b2) / (k2 - k1);     // или " y = k1 * x + b1 (y = k2 * x + b2) "
+
     Console.WriteLine("Point of intersection of two lines: (" + Math.Round(x,1) + "; " + Math.Round(y,1) + ")");
 }
 
