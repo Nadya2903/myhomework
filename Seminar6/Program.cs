@@ -47,10 +47,10 @@ PositiveNumber(MyArray);
 
 // Задача 2: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 
-void ReverseArray(int number)
+void BinarNumber(int number)
 {
     int size = 0;
-    int[] array = new int[8];
+    int[] array = new int[999];
 
     for (int i = 0; number > 0; i++)
     {
@@ -70,12 +70,34 @@ void ReverseArray(int number)
     }
 }
 
-Console.Write("Enter a number from 1 to 255: ");
+Console.Write("Enter a positive integer: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num < 1 && num > 255)
+if (num <= 0)
     Console.WriteLine("Please enter a valid value!");
 
-ReverseArray(num);
+BinarNumber(num);
+
+
+// Задача 3: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+void IntersectionPoint(double b1, double k1, double b2, double k2)
+{
+    double x = (b1 - b2) / (k2 - k1);
+    double y = k1 * x + b1;
+//    double y = (k2 * b1 - k1 * b2) / (k2 - k1);
+    Console.WriteLine("Point of intersection of two lines: (" + Math.Round(x,1) + "; " + Math.Round(y,1) + ")");
+}
+
+Console.WriteLine("Enter the x-coordinate of the first point: ");
+double b1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the y-coordinate of the first point: ");
+double k1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the x-coordinate of the second point: ");
+double b2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the y-coordinate of the second point: ");
+double k2 = Convert.ToInt32(Console.ReadLine());
+
+IntersectionPoint(b1, k1, b2, k2);
 
 */
