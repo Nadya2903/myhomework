@@ -20,9 +20,13 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter the number of columns: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-double[,] matrix = new double[m, n];
-
-RandomMatrix(matrix);
+if (m <= 0 || n <= 0)
+    Console.WriteLine("Please enter a valid value!");
+else
+{
+    double[,] matrix = new double[m, n];
+    RandomMatrix(matrix);
+}
 
 
 // Задача 2. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
@@ -52,9 +56,14 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter column number: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-if (m < sizelines & n < sizecolumns)
-    Console.WriteLine("Searched element: " + matrix[m,n]);
+if (m < 0 || n < 0)
+    Console.WriteLine("Please enter a valid value!");
 else
-    Console.WriteLine("There is no such element!");
+{
+    if (m < sizelines & n < sizecolumns)
+        Console.WriteLine("Searched element: " + matrix[m,n]);
+    else
+        Console.WriteLine("There is no such element!");
+}
 
 */
