@@ -1,4 +1,4 @@
-﻿/*
+﻿/**/
 
 // Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по возрастанию элементы каждой строки двумерного массива.
 
@@ -13,6 +13,8 @@ int[,] RandomMatrix(int[,] doublearray)
         }
         Console.WriteLine();
     }
+
+    Console.WriteLine();
 
     return doublearray;
 }
@@ -47,4 +49,3 @@ int[,] matrix = new int[3,4];
 RandomMatrix(matrix);
 SortMatrix(matrix);
 
-*/
