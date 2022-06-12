@@ -104,5 +104,4 @@ int[,] matrix = {{1,4,7,2},
                  {5,2,6,7}};
 
 SmallestSumOfElements(matrix);
-
 */
