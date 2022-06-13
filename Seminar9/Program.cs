@@ -53,11 +53,16 @@ int SumOfNumbers(int num)
     return sum;
 }
 
-Console.Write("Enter the number: ");
+Console.Write("Enter the positive number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-SumOfNumbers(num);
+if (num <= 0)
+    Console.Write("Please enter a valid value!");
+else
+{
+    SumOfNumbers(num);
 
-Console.Write("The sum of the digits in a number: " + SumOfNumbers(num));
+    Console.Write("The sum of the digits in a number: " + SumOfNumbers(num));
+}
 
 */
